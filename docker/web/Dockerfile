@@ -1,6 +1,7 @@
 FROM node:14.18.3-alpine3.15 as development
 
-WORKDIR /app
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
 EXPOSE 2000
 EXPOSE 80
